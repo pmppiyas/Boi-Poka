@@ -5,6 +5,7 @@ import './index.css';
 import Root from './Components/Root/Root';
 import ErrorPage from './Components/Root/ErrorPage';
 import Home from './Components/Home';
+import Books from './Components/Books/Books';
 import Dashboard from './Components/Dashboard';
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
+      },
+      {
+        path: '/books',
+        element: <Books></Books>,
       },
       {
         path: '/dashboard',
